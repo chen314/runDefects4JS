@@ -33,16 +33,15 @@ echo 'WP_TP_1           WP_ThemesPlus_1'
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 echo 'Please type in the ABBREVITAION of the application, sush as FP_1'
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
-# In the docker cantainer
-echo 'IN THE DOCKER CONTAINER TERMINAL, PLEASE TYPE IN:'
-echo '----------------------------------------------------------------'
-echo 'cd workspace' 
-echo 'Xvfb :99 -ac -screen 0 1280x1024x24 &'
-echo 'export DISPLAY=:99'
-echo '----------------------------------------------------------------'
-
 
 read anApp
+# In the docker cantainer
+echo "\n"
+echo 'IN THE DOCKER CONTAINER TERMINAL, PLEASE TYPE IN:'
+echo '----------------------------------------------------------------'
+echo 'source setup.sh' 
+echo '----------------------------------------------------------------'
+echo "\n"
 case $anApp in
     
     FP_1)                           echo 'Flatpickr'
@@ -52,7 +51,7 @@ case $anApp in
                                     docker run -it --net defects4js --ip 172.88.0.5 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:handsontable_defects1 bash
                                     ;;
     JQUI_1)                         echo 'Jqueryui'
-                                    docker run -it --net defects4js --ip 172.88.0.6 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:jqueryui_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.6 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:jquery_defect1 bash
                                     ;;
     LSJ_1)                          echo 'Lazyjs'
                                     docker run -it --net defects4js --ip 172.88.0.7 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:lazy_defect1 bash
