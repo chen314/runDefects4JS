@@ -63,7 +63,7 @@ case $anApp in
                                     docker run -it --net defects4js --ip 172.88.0.9 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:material_defect1 bash
                                     ;;
     MDL_1)                          echo 'Moodle'
-                                    docker run -it --net defects4js --ip 172.88.0.10 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:moodle_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.10 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:moodle28081_defect1 bash
                                     ;;
     MSJS_1)                         echo 'Multiscroll'
                                     docker run -it --net defects4js --ip 172.88.0.11 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:multiscroll_defect1 bash
