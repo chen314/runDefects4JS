@@ -1,9 +1,9 @@
 #! /bin/bash
 
 cd /workspace
-# Xvfb or X virtual framebuffer is a display server implementing the X11 display server protocol.
+# Xvfb is a display server implementing the X11 display server protocol.
 Xvfb :99 -ac -screen 0 1280x1024x24 &
-# 172.88.0.3 --> ram-test.mzw.jp
+# add 172.88.0.3 --> ram-test.mzw.jp in /etc/hosts
 cp /etc/hosts ~/hosts.txt
 sed -i '$a 172.88.0.3 ram-test.mzw.jp' ~/hosts.txt
 cp -f ~/hosts.txt /etc/hosts
