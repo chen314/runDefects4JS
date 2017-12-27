@@ -48,7 +48,7 @@ case $anApp in
                                     docker run -it --net defects4js --ip 172.88.0.4 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:flatpickr_defect1 bash
                                     ;;
     HOT_1)                          echo 'Handsontable'
-                                    docker run -it --net defects4js --ip 172.88.0.5 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:handsontable_defects1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.5 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:handsontable_defect1 bash
                                     ;;
     JQUI_1)                         echo 'Jqueryui'
                                     docker run -it --net defects4js --ip 172.88.0.6 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:jquery_defect1 bash
