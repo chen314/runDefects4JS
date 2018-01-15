@@ -39,11 +39,11 @@ read anApp
 echo "\n"
 echo 'IN THE DOCKER CONTAINER TERMINAL, PLEASE TYPE IN:'
 echo '----------------------------------------------------------------'
-echo 'source setup.sh' 
+echo 'source setup.sh'
 echo '----------------------------------------------------------------'
 echo "\n"
 case $anApp in
-    
+
     FP_1)                           echo 'Flatpickr'
                                     docker run -it --net defects4js --ip 172.88.0.4 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:flatpickr_defect1 bash
                                     ;;
@@ -77,40 +77,38 @@ case $anApp in
 
 #Mozilla
     MZ_AWSY_1)                      echo 'Areweslimyet'
-                                    docker run -it --net defects4js --ip 172.88.0.14 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:areweslimyet_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.14 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:mozilla_areweslimyet_defect1 bash
                                     ;;
     MZ_MLD_1)                       echo 'Mortarlistdetail'
-                                    docker run -it --net defects4js --ip 172.88.0.15 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:mortar_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.15 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:mozilla_mortarlistdetail_defect1 bash
                                     ;;
 #WikiMedia
     WM_TMH_1)                       echo 'WikiMidia_TimedMediaHandler_1'
-                                    docker run -it --net defects4js --ip 172.88.0.16 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:mediawiki_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.16 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:mediawiki28081_defect1 bash
                                     ;;
     WM_WH_1)                        echo 'WikiMedia_WikiHiero_1'
                                     docker run -it --net defects4js --ip 172.88.0.17 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wikimedia_wikihiero_defect1 bash
                                     ;;
 # WordPress
     WP_GP_1)                        echo 'WP_GalleriaPress'
-                                    docker run -it --net defects4js --ip 172.88.0.18 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_galleriaPress_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.18 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_galleriaPress28083_defect1 bash
                                     ;;
     WP_GM_1)                        echo 'WP_GrandMedia'
-                                    docker run -it --net defects4js --ip 172.88.0.19 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_grandMedia_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.19 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_grandMedia28085_defect1 bash
                                     ;;
     WP_HMP_1)                       echo 'WP_HeroMapsPro'
-                                    docker run -it --net defects4js --ip 172.88.0.20 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_heroMapsPro_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.20 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_heroMapsPro28084_defect1 bash
                                     ;;
     WP_IOYA_1)                      echo 'WP_InOverYourArchives'
-                                    docker run -it --net defects4js --ip 172.88.0.21 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_inOverYourArchives_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.21 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_inOverYourArchives28086_defect1 bash
                                     ;;
     WP_PT_1)                        echo 'WP_PressThis'
-                                    docker run -it --net defects4js --ip 172.88.0.22 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_pressThis_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.22 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_pressThis28087_defect1 bash
                                     ;;
     WP_TP_1)                        echo 'WP_ThemesPlus'
-                                    docker run -it --net defects4js --ip 172.88.0.23 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_themesPlus_defect1 bash
+                                    docker run -it --net defects4js --ip 172.88.0.23 --name ram -v /var/run/docker.sock:/var/run/docker.sock c314/defects4js_testcase:wordpressPlugins_themesPlus28088_defect1 bash
                                     ;;
 
     *)  echo 'Error! Please insert the correct abbreviation of the application.'
 
 esac
-
-
