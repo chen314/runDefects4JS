@@ -29,12 +29,12 @@ mozilla        mortar-list-detail
 wikimedia      TimedMediaHandler 
 wikimedia      wikihiero
 
-wp-plugins    galleria-press
-              grand-media 
-              hero-maps-pro
-              in-over-your-archives
-              press-this
-              themes-plus 
+wp-plugins     galleria-press
+               grand-media 
+               hero-maps-pro
+               in-over-your-archives
+               press-this
+               themes-plus 
 ```
 
 Requirements
